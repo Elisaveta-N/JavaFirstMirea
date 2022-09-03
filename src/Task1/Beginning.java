@@ -10,28 +10,28 @@ public class Beginning {
         double [] arr = new double [10];
         for (int i = 0; i < 10; i++)
             array[i] = i;
-        sumfor(array);
-        sumwhile(array);
-        sumdowhile(array);
-        printarg(args);
-        harmonicrow();
-        randomnum(arr);
-        randomnum2(array);
+        getSumFor(array);
+        getSumWhile(array);
+        getSumDoWhile(array);
+        printArg(args);
+        doHarmonicRow();
+        getRandomNum(arr);
+        getRandomNum2(array);
 
         Scanner in = new Scanner(System.in);
         System.out.print("Input a number: ");
         int a = in.nextInt();
-        factorial (a);
+        getFactorial(a);
     }
 
-    public static void sumfor(int[] num) {
+    public static void getSumFor(int[] num) {
         int sum = 0;
         for (int j : num) sum += j;
         System.out.print ("The sum of the array is ");
         System.out.println(sum);
     }
 
-    public static void sumwhile(int[] num)
+    public static void getSumWhile(int[] num)
     {
         int sum = 0, i = 0;
         while (i < num.length) {
@@ -42,7 +42,7 @@ public class Beginning {
         System.out.println(sum);
     }
 
-    public static void sumdowhile(int[] num)
+    public static void getSumDoWhile(int[] num)
     {
         int sum = 0, i = 0;
         do {
@@ -54,7 +54,7 @@ public class Beginning {
         System.out.println(sum);
     }
 
-    public static void printarg(String[] args)
+    public static void printArg(String[] args)
     {
         if (args.length == 0)
             System.out.println ("The arguments are: none");
@@ -65,7 +65,7 @@ public class Beginning {
         }
     }
 
-    public static void harmonicrow()
+    public static void doHarmonicRow()
     {
         System.out.println ("First 10 members of harmonic row:");
         for (int i = 1; i < 11; i ++)
@@ -75,7 +75,7 @@ public class Beginning {
         }
     }
 
-    public static void randomnum(double [] arr)
+    public static void getRandomNum(double [] arr)
     {
         System.out.println ("10 randomly generated numbers:");
         for (int i = 0; i < arr.length; i++) {
@@ -85,14 +85,14 @@ public class Beginning {
         }
         System.out.println ("Same but sorted:");
         Arrays.sort(arr);
-        for (int i = 0; i < arr.length; i++) {
-            String str = String.format("%.3f", arr[i]);
+        for (double v : arr) {
+            String str = String.format("%.3f", v);
             System.out.println(str);
         }
     }
 
 
-    public static void randomnum2(int [] num)
+    public static void getRandomNum2(int [] num)
     {
         System.out.println ("Another 10 randomly generated numbers:");
         Random rand = new Random();
@@ -102,12 +102,12 @@ public class Beginning {
         }
         System.out.println ("Same but sorted:");
         Arrays.sort(num);
-        for (int i = 0; i < num.length; i++) {
-            System.out.println(num[i]);
+        for (int j : num) {
+            System.out.println(j);
         }
     }
 
-    public static void factorial (int a)
+    public static void getFactorial(int a)
     {
         int k = a, fact = 1;
         while (k > 1)
