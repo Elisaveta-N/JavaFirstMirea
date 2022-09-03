@@ -1,7 +1,9 @@
+package Task1;
 import java.util.Random;
 import java.util.Scanner;
 import java.util.Arrays;
-public class Main {
+
+public class Beginning {
     public static void main(String[] args) {
         System.out.println("Hello world!");
         int [] array = new int[10];
@@ -32,10 +34,10 @@ public class Main {
     public static void sumwhile(int[] num)
     {
         int sum = 0, i = 0;
-       while (i < num.length) {
-           sum += num[i];
-           i++;
-       }
+        while (i < num.length) {
+            sum += num[i];
+            i++;
+        }
         System.out.print ("The sum of the array is ");
         System.out.println(sum);
     }
@@ -43,7 +45,7 @@ public class Main {
     public static void sumdowhile(int[] num)
     {
         int sum = 0, i = 0;
-       do {
+        do {
             sum += num[i];
             i++;
         }
@@ -54,9 +56,13 @@ public class Main {
 
     public static void printarg(String[] args)
     {
-        System.out.println ("The arguments are ");
-        for (String i : args)
-            System.out.println(i);
+        if (args.length == 0)
+            System.out.println ("The arguments are: none");
+        else {
+            System.out.println("The arguments are: ");
+            for (String i : args)
+                System.out.println(i);
+        }
     }
 
     public static void harmonicrow()
@@ -113,3 +119,4 @@ public class Main {
         System.out.println(fact);
     }
 }
+
