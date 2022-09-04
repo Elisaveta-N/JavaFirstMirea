@@ -1,9 +1,9 @@
 package Task4;
 
 public class Author {
-    String name;
-    String email;
-    char gender;
+    private final String name;
+    private String email;
+    private final char gender;
     public Author(String name, String email, char gender)
     {
         this.name = name;
