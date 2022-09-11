@@ -1,7 +1,7 @@
-package Task7;
+package Task7.Shape;
 
 public class Square extends Rectangle{
-    public Square() {;}
+    public Square() {}
     public Square(double side)
     {
         width = side;

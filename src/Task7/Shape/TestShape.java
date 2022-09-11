@@ -1,4 +1,4 @@
-package Task7;
+package Task7.Shape;
 
 public class TestShape {
     public static void main(String[] args) {
@@ -11,7 +11,7 @@ public class TestShape {
         System.out.println(s1.getColor()); // метод определенный в классе Shape
         System.out.println(s1.isFilled()); // метод определенный в классе Shape
 
-        System.out.println(s1.getRadius());//абстрактный класс Shape не содержит метод getRadius()
+        //System.out.println(s1.getRadius());//абстрактный класс Shape не содержит метод getRadius()
         Circle c1 = (Circle)s1; // Downcast back to Circle
         System.out.println(c1);//метод определенный в классе Circle
         System.out.println(c1.getArea());//метод определенный в классе Circle
@@ -20,13 +20,13 @@ public class TestShape {
         System.out.println(c1.isFilled());// метод определенный в классе Shape
         System.out.println(c1.getRadius());//метод определенный в классе Circle
 
-        Shape s2 = new Shape(); //нельзя создать объект абстрактного класса
+        //Shape s2 = new Shape(); //нельзя создать объект абстрактного класса
         Shape s3 = new Rectangle(1.0, 2.0, "RED", false); // Upcast
         System.out.println(s3);//метод определенный в классе Rectangle
         System.out.println(s3.getArea());//метод определенный в классе Rectangle
         System.out.println(s3.getPerimeter());//метод определенный в классе Rectangle
         System.out.println(s3.getColor());// метод определенный в классе Shape
-        System.out.println(s3.getLength());//абстрактный класс Shape не содержит метод getLength()
+        //System.out.println(s3.getLength());//абстрактный класс Shape не содержит метод getLength()
 
         Rectangle r1 = (Rectangle)s3; // downcast
         System.out.println(r1);//метод определенный в классе Rectangle
@@ -38,7 +38,7 @@ public class TestShape {
         System.out.println(s4);//метод определенный в классе Square
         System.out.println(s4.getArea());//метод определенный в классе Rectangle
         System.out.println(s4.getColor());// метод определенный в классе Shape
-        System.out.println(s4.getSide());//абстрактный класс Shape не содержит метод getSide()
+        //System.out.println(s4.getSide());//абстрактный класс Shape не содержит метод getSide()
 // Take note that we downcast Shape s4 to Rectangle,
 // which is a superclass of Square, instead of Square
 
