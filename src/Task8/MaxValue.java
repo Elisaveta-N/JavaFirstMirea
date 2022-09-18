@@ -1,5 +1,5 @@
 package Task8;
-
+//задание 8.17
 import java.util.Scanner;
 
 public class MaxValue {

@@ -1,5 +1,5 @@
 package Task8;
-
+//задание 8.1
 import java.util.Scanner;
 
 public class TriangleSeq {
